@@ -22,7 +22,7 @@ class GameTest {
 
     @Test
     public void shouldWhereOnePlayers() {
-        game.register(player1);
+        game.register("Alex", player1);
 
         String playerName1 = "Alex";
         String playerName2 = "Jon";
@@ -32,8 +32,8 @@ class GameTest {
 
     @Test
     public void shouldWhereTwoPlayers() {
-        game.register(player1);
-        game.register(player2);
+        game.register("Alex", player1);
+        game.register("Jon", player2);
 
         String playerName1 = "Alex";
         String playerName2 = "Jon";
@@ -43,9 +43,9 @@ class GameTest {
 
     @Test
     public void shouldWhereWinFirstPlayer() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
+        game.register("Alex", player1);
+        game.register("Jon", player2);
+        game.register("Max", player3);
 
         String playerName1 = "Jon";
         String playerName2 = "Alex";
@@ -55,9 +55,9 @@ class GameTest {
 
     @Test
     public void shouldWhereWinSecondPlayer() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
+        game.register("Alex", player1);
+        game.register("Jon", player2);
+        game.register("Max", player3);
 
         String playerName1 = "Alex";
         String playerName2 = "Jon";
@@ -67,10 +67,10 @@ class GameTest {
 
     @Test
     public void shouldWhereDraw() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
-        game.register(player4);
+        game.register("Alex", player1);
+        game.register("Jon", player2);
+        game.register("Max", player3);
+        game.register("Sten", player4);
 
         String playerName1 = "Jon";
         String playerName2 = "Max";
@@ -80,10 +80,10 @@ class GameTest {
 
     @Test
     public void shouldWhereNoMatch() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
-        game.register(player4);
+        game.register("Alex", player1);
+        game.register("Jon", player2);
+        game.register("Max", player3);
+        game.register("Sten", player4);
 
         String playerName1 = "Shon";
         String playerName2 = "Kurt";
@@ -93,10 +93,10 @@ class GameTest {
 
     @Test
     public void shouldWhereOneMatch() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
-        game.register(player4);
+        game.register("Alex", player1);
+        game.register("Jon", player2);
+        game.register("Max", player3);
+        game.register("Sten", player4);
 
         String playerName1 = "Jon";
         String playerName2 = "Kurt";
